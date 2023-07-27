@@ -1,0 +1,20 @@
+from: markdown
+to: pdf
+
+pdf-engine: lualatex
+listings: true
+number-sections: true
+
+variables:
+  documentclass: jlreq
+  indent: true
+  header-includes: |
+    \usepackage{graphicx}
+    \usepackage{here}
+    \usepackage{pdfpages}
+    \lstset{
+      basicstyle=\ttfamily,
+      breaklines=true,
+      frame=single,
+      numbers=left,
+    }
