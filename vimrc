@@ -17,6 +17,6 @@ function! s:Pandoc()
   let mdpath = expand('%:p')
   let pdfpath = expand('%:p:r') . '.pdf'
   write
-  execute('!pandoc --defaults=$HOME/.pandoc.yml ' . mdpath . ' -o ' . pdfpath)
+  execute('!pandoc --defaults=$HOME/.pandoc.yaml ' . mdpath . ' -o ' . pdfpath)
 endfunction
 command! Pandoc call s:Pandoc()

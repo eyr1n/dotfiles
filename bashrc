@@ -7,7 +7,7 @@ HISTCONTROL=ignoreboth
 
 function pandoq() {
   PDFPATH=$(dirname $1)/$(basename $1 .md).pdf
-  pandoc --defaults=$HOME/.pandoc.yml $1 -o $PDFPATH
+  pandoc --defaults=$HOME/.pandoc.yaml $1 -o $PDFPATH
 }
 
 alias exa="exa --long --icons --git"

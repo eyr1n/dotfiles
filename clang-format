@@ -1,0 +1,6 @@
+BasedOnStyle: LLVM
+AllowShortFunctionsOnASingleLine: Empty
+IndentCaseLabels: true
+AlignEscapedNewlines: DontAlign
+AllowShortIfStatementsOnASingleLine: true
+ColumnLimit: 120
