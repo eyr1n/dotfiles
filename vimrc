@@ -20,3 +20,10 @@ function! s:Pandoc()
   execute('!pandoc --defaults=$HOME/.pandoc.yaml ' . mdpath . ' -o ' . pdfpath)
 endfunction
 command! Pandoc call s:Pandoc()
+
+function! s:Latexmk()
+  let texpath = expand('%:p')
+  write
+  execute('!latexmk ' . texpath)
+endfunction
+command! Latexmk call s:Latexmk()

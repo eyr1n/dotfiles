@@ -12,6 +12,8 @@ variables:
     \usepackage{graphicx}
     \usepackage{here}
     \usepackage{pdfpages}
+    \usepackage{caption}
+    \usepackage{amsmath,amssymb}
     \lstset{
       basicstyle=\ttfamily,
       breaklines=true,
