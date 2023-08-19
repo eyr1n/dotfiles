@@ -20,3 +20,7 @@ alias websrv-scp="sshpass -p 'p3-web046' scp -r -P 10046 p3-web046@133.15.41.21:
 
 type lesspipe &> /dev/null && eval "$(lesspipe)"
 type starship &> /dev/null && eval "$(starship init bash)"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
